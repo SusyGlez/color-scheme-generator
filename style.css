@@ -18,11 +18,12 @@ nav {
   align-content: center;
   padding-top: 1.5rem;
   padding-bottom: 1rem;
+  z-index: +1;
 }
 
 .color-picker,
 .mode-selector,
-.mode-select-btn {
+.get-scheme-btn {
   height: 6vh;
 }
 
@@ -31,7 +32,7 @@ nav {
 }
 
 .mode-selector,
-.mode-select-btn {
+.get-scheme-btn {
   background-color: white;
   border: 1px solid darkgrey;
   border-style: outset;
@@ -45,15 +46,20 @@ nav {
   padding: 5px 10px;
 }
 
-.mode-select-btn {
+.get-scheme-btn {
   width: 15vw;
 }
 
 .color-scheme {
   display: flex;
   flex-direction: row;
-  border: 5px solid magenta;
+  margin-top: 10px;
   width: 95vw;
-  border-radius: 6px;
   height: 70vh;
+}
+
+.c-1 {
+  width: 95vw;
+  border: transparent;
+  border-radius: 30px;
 }
