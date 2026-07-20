@@ -25,35 +25,39 @@ nav {
 .mode-selector,
 .get-scheme-btn {
   height: 6vh;
+  border: 1px solid darkgrey;
+  border-style: outset;
+  border-radius: 10px;
 }
 
 .color-picker {
-  width: 5vw;
+  width: 10vw;
 }
 
 .mode-selector,
 .get-scheme-btn {
   background-color: white;
-  border: 1px solid darkgrey;
-  border-style: outset;
-  border-radius: 6px;
   font-family: "Urbanist", sans-serif;
   font-size: 1.4rem;
 }
 
 .mode-selector {
   width: 30vw;
-  padding: 5px 10px;
+  padding: 0.3125em 0.625em;
 }
 
 .get-scheme-btn {
   width: 15vw;
 }
 
-.color-scheme {
+.color-scheme,
+.hex-values {
   display: flex;
   flex-direction: row;
-  margin-top: 10px;
+  margin-top: 2.5em;
+}
+
+.color-scheme {
   width: 95vw;
   height: 70vh;
 }
@@ -62,4 +66,68 @@ nav {
   width: 95vw;
   border: transparent;
   border-radius: 30px;
+}
+
+.hex-values {
+  justify-content: center;
+  width: 95vw;
+  height: 10vh;
+  margin-top: 10px;
+}
+
+.hex-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50em;
+  gap: 1em;
+}
+
+.copy-btn,
+.copy-btn-img {
+  background-color: transparent;
+  border: none;
+  width: 3em;
+  height: 3em;
+}
+
+.hex-value {
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.4rem;
+}
+
+/* ------ Media Queries ------ */
+
+@media (max-width: 800px) {
+  .mode-selector,
+  .get-scheme-btn {
+    font-size: 0.9rem;
+    width: fit-content;
+  }
+
+  .color-scheme {
+    margin-top: 1.9em;
+  }
+
+  .hex-values {
+    justify-content: space-around;
+  }
+
+  .hex-item {
+    width: fit-content;
+    flex-direction: column;
+    gap: 0.3125em;
+  }
+
+  .hex-value {
+    font-size: 0.8rem;
+  }
+
+  .copy-btn-img,
+  .copy-btn {
+    width: 1.6em;
+    height: 1.6em;
+    padding: 0;
+  }
 }
